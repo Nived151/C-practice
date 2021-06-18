@@ -5,17 +5,20 @@
 
 int main() {
     int n,k;
-    scanf("%d%d",&n,&k);
+    printf("enter n");
+    scanf("%d",&n);
     int a[n],i,j,temp;
+    printf("enter values of array");
     for (i=0;i<n;i++) scanf("%d",&a[i]);
+    printf("enter shift");
+    scanf("%d",&k);
     
     while(k){
-        //for left shift by 1
-    temp=a[0];
-    for(j=0;j<n;j++){
-        a[j]=a[j+1];
+    temp=a[n-1];
+    for(j=n-1;j>0;j--){
+        a[j]=a[j-1];
     }
-    a[n-1]=temp;
+    a[0]=temp;
     k--;
     }
     for(i=0;i<n;i++) printf("%d ",a[i]);
