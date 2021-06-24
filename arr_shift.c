@@ -6,14 +6,16 @@
 int main() {
     int n,k;
     scanf("%d",&n);
-    int a[n],i,temp;
-    for (i=0;i<n;i++) scanf("%d",&a[i]);
+    int a[n],i,temp,b[n];
+    for (i=0;i<n;i++){
+         scanf("%d",&a[i]);
+         b[i]=0;}
     scanf("%d",&k);
     while(k){
     temp=a[n-1];
     for(i=n-1;i>0;i--){
-        a[i]=a[i-1];}
-    a[0]=temp;
+        b[i]=a[i-1];}
+    b[0]=temp;
     k--;}
-    for(i=0;i<n;i++) printf("%d ",a[i]);
+    for(i=0;i<n;i++) printf("%d ",b[i]);
     return 0;}
