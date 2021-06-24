@@ -7,10 +7,12 @@ int main() {
     int n,k;
     scanf("%d",&n);
     int a[n],i,temp,b[n];
+    
     for (i=0;i<n;i++){
          scanf("%d",&a[i]);
          b[i]=a[i];}
     scanf("%d",&k);
+
     while(k){
     temp=b[n-1];
     for(i=n-1;i>0;i--){
