@@ -6,5 +6,4 @@ int main(){
     c= sizeof(char);
     f=sizeof(float);
     d=sizeof(double);
-    printf("%d %d %d %d",i,c,f,d);
-}
+    printf("%d %d %d %d",i,c,f,d);}
